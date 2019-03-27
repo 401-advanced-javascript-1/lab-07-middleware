@@ -16,7 +16,7 @@ const onlyC = (req, res, next) => {
 };
 
 const errorD = (req, data, next) => {
-    next('There was an ERROR!');
+  next('There was an ERROR!');
 };
 router.get('/c', requestTime, onlyC, (req,res) => {
   res.status(200).send('Route C');
